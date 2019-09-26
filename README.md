@@ -27,7 +27,7 @@ Other Tools:
 - **consumer_counter:** tbd
 - **outliers-detection:** tbd
 - **<a href="https://github.com/bwNetFlow/protobuf_to_netflow_converter" target="_blank">protobuf_to_netflow_converter</a>:** blabla Converts all incoming protobuf decoded messages into NetFlow v9 compliant messages.
-- **<a href="https://github.com/bwNetFlow/https://github.com/bwNetFlow/processor_reducer" target="_blank">processor_reducer</a>:** tbd
+- **<a href="https://github.com/bwNetFlow/processor_reducer" target="_blank">processor_reducer</a>:** tbd
 
 To develop Kafka consumers/producers with Go the [kafkaconnector](https://github.com/bwNetFlow/kafkaconnector) library abstracts most of the recurrent code fragments.
 
