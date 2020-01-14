@@ -30,6 +30,7 @@ Other Tools:
 - **<a href="https://github.com/bwNetFlow/processor_reducer" target="_blank">processor_reducer</a>:** tbd
 
 To develop Kafka consumers/producers with Go the [kafkaconnector](https://github.com/bwNetFlow/kafkaconnector) library abstracts most of the recurrent code fragments.
+To develop Kafka consumers/producers with C++ the [cpp_kafkaconnector](https://github.com/bwNetFlow/cpp_kafkaconnector) library abstracts most of the recurrent code fragments.
 
 ## Deployment
 
