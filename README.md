@@ -3,7 +3,7 @@
 ![bwNetFlow Overview](overview.png "bwNetFlow Overview")
 
 The bwNetFlow suite uses existing software and provides
-glue codes to allow for large scale network flow analysis.
+glue code to allow for large scale network flow analysis.
 
 bwNetFlow uses [GoFlow](https://github.com/cloudflare/goflow) and
 [Apache Kafka](https://kafka.apache.org/) to process network flow via NetFlow and Kafka.
@@ -22,10 +22,7 @@ GoFlow - yet with an [extended protobuf message](https://github.com/bwNetFlow/pr
 
 Other Tools:
 
-- **consumers_example:** tbd
-- **consumer_dumper:** tbd
-- **consumer_counter:** tbd
-- **outliers-detection:** tbd
+- [consumer examples](https://github.com/bwNetFlow/python-consumers): various detectors, SQLite dumper, ...
 - **<a href="https://github.com/bwNetFlow/protobuf_to_netflow_converter" target="_blank">protobuf_to_netflow_converter</a>:** Converts all incoming protobuf decoded messages into NetFlow v9 compliant messages.
 - **<a href="https://github.com/bwNetFlow/protobuf_to_csv_converter" target="_blank">protobuf_to_csv_converter</a>:** Writes all incoming protobuf decoded messages into csv files. The specific protobuf fields can be completely user specified.
 - **<a href="https://github.com/bwNetFlow/bwnetflow_dosdetection" target="_blank">bwnetflow_dosdetection</a>:** Provides a sample volume-based DoS Detection implementation based on protobuf converted NetFlow data.
@@ -36,6 +33,4 @@ To develop Kafka consumers/producers with C++ the [cpp_kafkaconnector](https://g
 
 ## Deployment
 
-For deploying the bwNetFlow suite we provide Ansible scripts or Docker / Docker-Compose description.
-
-tbd
+For deploying the bwNetFlow suite we provide Ansible scripts or Docker / Docker-Compose description. The processing side requires a Kafka cluster with a number of topics arranged to the individual needs. A typical pipeline is a topic fed by goflow, which is read and rewritten to an additional topic by the enricher, which is in turn splitted into tenant-specific topics using the splitter component. The consuming side is availible here: https://github.com/bwNetFlow/demo
