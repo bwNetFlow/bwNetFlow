@@ -1,6 +1,4 @@
-# bwNetFlow - Open Source Network Flow Analysis Suite
-
-![bwNetFlow Overview](overview.png "bwNetFlow Overview")
+![bwNetFlow Poster](poster.png "bwNetFlow Poster")
 
 The bwNetFlow suite uses existing software and provides
 glue code to allow for large scale network flow analysis.
