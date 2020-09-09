@@ -27,7 +27,7 @@ Other Tools:
 - **<a href="https://github.com/bwNetFlow/protobuf_to_csv_converter" target="_blank">protobuf_to_csv_converter</a>:** Writes all incoming protobuf decoded messages into csv files. The specific protobuf fields can be completely user specified.
 - **<a href="https://github.com/bwNetFlow/bwnetflow_dosdetection" target="_blank">bwnetflow_dosdetection</a>:** Provides a sample volume-based DoS Detection implementation based on protobuf converted NetFlow data.
 - **<a href="https://github.com/bwNetFlow/NetFlow_NEMEA_Toolchain" target="_blank">NetFlow_NEMEA_Toolchain</a>:** Provies an example how the bwNetFlow NetFlow v9 exporter and the NEMEA framework can be chained. This can be applied similarly to all other available NEMEA modules.
-- **<a href="https://github.com/bwNetFlow/processor_reducer" target="_blank">processor_reducer</a>:** tbd
+- **<a href="https://github.com/bwNetFlow/processor_reducer" target="_blank">processor_reducer</a>:** This is a small Kafka Processor, i.e. a Consumer and a Producer, which supports reducing Protobuf messages to a specific subset of fields. 
 
 To develop Kafka consumers/producers with Go the [kafkaconnector](https://github.com/bwNetFlow/kafkaconnector) library abstracts most of the recurrent code fragments.
 To develop Kafka consumers/producers with C++ the [cpp_kafkaconnector](https://github.com/bwNetFlow/cpp_kafkaconnector) library abstracts most of the recurrent code fragments.
